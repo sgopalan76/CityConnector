@@ -1,6 +1,12 @@
 Requirements
 For building and running the application you need:
 
+Enhancement - Deployed on Kubernetes
+URL - http://34.75.192.228:8081/connected/origin/Newark/destination/Boston
+
+Swagger URL -
+http://34.75.192.228:8081/swagger-ui.html#/
+
 JDK 1.11
 Maven 4.0
 Running the application locally
