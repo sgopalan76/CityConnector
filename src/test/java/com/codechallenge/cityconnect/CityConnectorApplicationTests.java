@@ -11,58 +11,58 @@ class CityConnectorApplicationTests {
 
 	@Test
 	void cityConnectorRoutes_1() throws Exception {
-		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("San Diego", "Los Angeles"));
+		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("San Diego", "Los Angeles").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_2() throws Exception {
-		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Los Angeles", "San Diego"));
+		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Los Angeles", "San Diego").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_3() throws Exception {
-		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Boston", "New York"));
+		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Boston", "New York").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_4() throws Exception {
-		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("boston", "New york"));
+		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("boston", "New york").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_5() throws Exception {
-		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("trenton", "albany"));
+		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("trenton", "albany").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_6() throws Exception {
-		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Delhi", "Mumbai"));
+		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Delhi", "Mumbai").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_7() throws Exception {
-		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Richmond", "DC"));
+		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("Richmond", "DC").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_8() throws Exception {
 		assertEquals("no",
-				AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("San Francisco", "Los Angeles"));
+				AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("San Francisco", "Los Angeles").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_9() throws Exception {
-		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("newark", "boston"));
+		assertEquals("yes", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("newark", "boston").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_10() throws Exception {
-		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("", ""));
+		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("", "").isHasCityConnector());
 	}
 
 	@Test
 	void cityConnectorRoutes_11() throws Exception {
-		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("", "Chennai"));
+		assertEquals("no", AppConfig.returnCityConnectorBean().fetchCityConnectorRoutes("", "Chennai").isHasCityConnector());
 	}
 
 }
