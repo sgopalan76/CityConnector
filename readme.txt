@@ -7,7 +7,7 @@ URL - http://35.185.12.126:8081/connected/origin/san%20diego/destination/los%20a
 Implemented with Spring security (test/test)
 
 Swagger URL -
-http://34.75.192.228:8081/swagger-ui.html#/
+http://35.185.12.126:8081/swagger-ui.html#/
 
 JDK 1.11
 Maven 4.0
