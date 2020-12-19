@@ -2,7 +2,9 @@ Requirements
 For building and running the application you need:
 
 Enhancement - Deployed on Kubernetes
-URL - http://34.75.192.228:8081/connected/origin/Newark/destination/Boston
+URL - http://35.185.12.126:8081/connected/origin/san%20diego/destination/los%20angeles
+
+Implemented with Spring security (test/test)
 
 Swagger URL -
 http://34.75.192.228:8081/swagger-ui.html#/
