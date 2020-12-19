@@ -59,15 +59,15 @@ public class CityConnectorBean {
 		else 
 			hasRoutes="no";
 		
-		ResponseEntity<String> response = config.restTemplate().exchange("http://fetch-service/Venki", 
+		/*ResponseEntity<String> response = config.restTemplate().exchange("http://fetch-service/Venki", 
         		HttpMethod.GET,
                 null, new ParameterizedTypeReference<String>() {
-                });
+                });*/
 		
 		userBean.setOriginCity(sourceCity);
 		userBean.setDestinationCity(destinationCity);
 		userBean.setHasCityConnector(hasRoutes);
-		userBean.setMicroserviceCommunicate(response.getBody());
+		//userBean.setMicroserviceCommunicate(response.getBody());
         return userBean;    
         		
     }

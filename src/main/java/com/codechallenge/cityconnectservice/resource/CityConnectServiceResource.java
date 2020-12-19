@@ -23,8 +23,6 @@ public class CityConnectServiceResource {
 	@Autowired
 	private CityConnectorBean cityConnectServiceBean;
 	
-	@Autowired
-    Config config;
 	
 	/**
 	 * This method takes in a Source City and Destination City as input
@@ -43,13 +41,4 @@ public class CityConnectServiceResource {
 		return cityConnectServiceBean.fetchCityConnectorRoutes(sourceCity, destinationCity);
 	}
 	
-	@GetMapping("/{hello}")
-	public String getResponseFromMicro(@PathVariable("hello") final String userName) {
-		System.out.println("updated call...");
-		ResponseEntity<String> response = config.restTemplate().exchange("http://fetch-service/"+userName, 
-        		HttpMethod.GET,
-                null, new ParameterizedTypeReference<String>() {
-                });
-		return response.getBody();
-	}
 }
